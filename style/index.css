@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@700&display=swap');
+div {
+    background-color: #121212;
+}
+
+header {
+    padding: 2%;
+}
+h1 {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Fira Mono', monospace;
+    font-size: 5vw;
+    padding: 4%;
+    color: white;
+}
+
+h2 {
+    display: flex;
+    font-size: 3.5vw;
+    font-family: 'Fira Mono', monospace;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    padding-bottom: 2%;
+    padding-left: 5%;
+}
+
+nav {
+    display:flex;
+    padding: 25px;
+    justify-content: space-evenly;
+    align-content: center;
+    margin-bottom: 50px;
+}
+
+.flex-item {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'Fira Mono', monospace;
+    font-size: 2.8vw;
+}
+
+.flex-item:hover {
+    color: #ff6d00;
+}
+
+.first-title {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.second-title {
+    display: flex;
+    justify-content: center;
+}
+
+.sam-hall {
+    color:#9d4edd;
+}
+
+.symbols {
+    color: #ff6d00;
+}
+
+p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-size: 2.7vw;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.big-pic {
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+}
+
+#project-images {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 3%;
+}
+
+#project-content {
+    width: 300px;
+    font-size: 1.35vw;
+    font-family: 'Open Sans', sans-serif;
+    order: 5;
+    padding-top: 50x;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    font-size: 2em;
+    font-family: 'Fira Mono', monospace;
+    color: #9d4edd;
+    background-color: #121212;
+    border: none;
+    margin-bottom: 3%;
+
+}
+
+button:hover {
+    color: #ff6d00;
+}
+
+.projects-img {
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+
+}
+
+.projects-img img{
+    padding: 5%;
+    height: auto;
+    width: 25%;
+}
+
+.about-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+}
+
+
+#about-p {
+    font-size: 3vw;
+    font-family: 'Open Sans', sans-serif;
+    padding: 50px;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-start;
+    padding: 45px;
+}
+
+.contact-box {
+    width: 40%;;
+    height: 250px;
+    border: 4px solid #9d4edd;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.console {
+    font-size: 2rem;
+    font-family: 'Fira Mono', monospace;
+}
+
+.contact p {
+    font-size: 2.5vw;
+}
+
+@media (max-width: 1800px) {
+    #project-images {
+        flex-flow: row wrap;
+    }
+    #project-images .pics {
+        width: 40%;
+        height: 30%;
+        padding: 10px;
+        align-items: center;
+        justify-items: center;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    #project-images #project-content {
+        width: 40%;
+        font-size:3vw;
+        padding: 10px;
+    }
+
+    .big-pic img {
+        width: 86%;
+        height: auto;
+        padding-top: 15px;
+    }
+
+    .intro {
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
+
+@media (max-width: 620px) {
+
+    nav {
+        flex-direction: column wrap;
+        align-items: center;
+        
+    }
+
+
+    .contact {
+        flex-direction: column;
+    }
+
+    .contact-box {
+        width: 90%;
+    }
+}
